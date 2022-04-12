@@ -19,11 +19,11 @@
             "dom"
         ],
         "paths": {
-            "examplemodule": [
-                "dist/examplemodule"
+            "reaver": [
+                "dist/reaver"
             ],
-            "examplemodule/*": [
-                "dist/examplemodule/*"
+            "reaver/*": [
+                "dist/reaver/*"
             ]
         }
     },

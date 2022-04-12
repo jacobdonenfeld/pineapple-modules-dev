@@ -5,36 +5,36 @@
     "projects": {
         "examplemodule": {
             "projectType": "library",
-            "root": "projects/examplemodule",
-            "sourceRoot": "projects/examplemodule/src",
+            "root": "projects/reaver",
+            "sourceRoot": "projects/reaver/src",
             "prefix": "lib",
             "architect": {
                 "build": {
                     "builder": "@angular-devkit/build-ng-packagr:build",
                     "options": {
-                        "tsConfig": "projects/examplemodule/tsconfig.lib.json",
-                        "project": "projects/examplemodule/ng-package.json"
+                        "tsConfig": "projects/reaver/tsconfig.lib.json",
+                        "project": "projects/reaver/ng-package.json"
                     },
                     "configurations": {
                         "production": {
-                            "tsConfig": "projects/examplemodule/tsconfig.lib.prod.json"
+                            "tsConfig": "projects/reaver/tsconfig.lib.prod.json"
                         }
                     }
                 },
                 "test": {
                     "builder": "@angular-devkit/build-angular:karma",
                     "options": {
-                        "main": "projects/examplemodule/src/test.ts",
-                        "tsConfig": "projects/examplemodule/tsconfig.spec.json",
-                        "karmaConfig": "projects/examplemodule/karma.conf.js"
+                        "main": "projects/reaver/src/test.ts",
+                        "tsConfig": "projects/reaver/tsconfig.spec.json",
+                        "karmaConfig": "projects/reaver/karma.conf.js"
                     }
                 },
                 "lint": {
                     "builder": "@angular-devkit/build-angular:tslint",
                     "options": {
                         "tsConfig": [
-                            "projects/examplemodule/tsconfig.lib.json",
-                            "projects/examplemodule/tsconfig.spec.json"
+                            "projects/reaver/tsconfig.lib.json",
+                            "projects/reaver/tsconfig.spec.json"
                         ],
                         "exclude": [
                             "**/node_modules/**"
@@ -43,5 +43,5 @@
                 }
             }
         }},
-    "defaultProject": "examplemodule"
+    "defaultProject": "reaver"
 }
